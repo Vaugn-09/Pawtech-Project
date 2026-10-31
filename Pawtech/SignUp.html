@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Pawtech</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <main class="auth-shell">
+        <header class="brand">
+            <h1>PAWTECH</h1>
+            <img class="pets" src="Pets.png" alt="A dog and three cats peeking over a line">
+        </header>
+
+        <section class="auth-card" aria-label="Account access">
+            <nav class="auth-tabs" aria-label="Account pages">
+                <a href="Log-in.html">Log In</a>
+                <a href="SignUp.html" aria-current="page">Sign Up</a>
+            </nav>
+            <div class="auth-content">
+                <h2>Create Account</h2>
+                <form id="signup-form">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" name="name" autocomplete="name" required>
+
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" name="email" autocomplete="email" required>
+
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" autocomplete="new-password" required>
+
+                    <label for="signup-password-confirmation">Confirm Password</label>
+                    <input type="password" id="signup-password-confirmation" name="password-confirmation" autocomplete="new-password" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div class="auth-loading" id="auth-loading" role="status" aria-live="polite" aria-hidden="true" hidden>
+        <span class="loading-spinner" aria-hidden="true"></span>
+        <p>Creating your account...</p>
+    </div>
+    <script src="auth.js" defer></script>
+</body>
+</html>
